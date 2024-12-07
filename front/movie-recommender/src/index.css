@@ -1,0 +1,135 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Recommendations.css */
+
+/* Fond dégradé global avec une image de fond */
+/* Fond dégradé global avec une image de fond */
+body {
+  background: url('https://img.freepik.com/free-photo/top-view-film-elements-white-background_23-2148416838.jpg?ga=GA1.1.1941156772.1727006616&semt=ais_hybrid') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+/* Animation sur le conteneur */
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre principal */
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input de recherche */
+input[type="text"] {
+  border: 2px solid #3f0b32;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #2a022e;
+  color: white;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+/* Focus sur l'input */
+input[type="text"]:focus {
+  outline: none;
+  border-color: #9f7aea;
+  box-shadow: 0 0 5px rgba(151, 20, 118, 0.6);
+}
+
+/* Boutons de recommandation */
+button {
+  background-color: #3d0e2a;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #680235;
+  transform: scale(1.05);
+}
+
+/* Message d'erreur */
+.text-red-500 {
+  color: #f56565;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Liste des recommandations */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+/* Élément de la liste des recommandations */
+ul li {
+  background-color: #e2d6de;
+  padding: 16px;
+  border: 2px solid #dbd1d7;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: rgb(102, 10, 56);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Style des titres des films */
+ul li strong {
+  font-size: 1.2rem;
+  color: #2e0228;
+}
+
+/* Section des recommandations basées sur l'événement */
+.event-section {
+  margin-top: 30px;
+}
+
+/* Titre pour les recommandations d'événements */
+.event-section h2 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
